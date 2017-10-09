@@ -51,6 +51,8 @@ public class MybatisProperties {
    */
   private String[] mapperLocations;
 
+  private String[] mapperPackages;
+
   /**
    * Packages to search type aliases. (Package delimiters are ",; \t\n")
    */
@@ -88,6 +90,14 @@ public class MybatisProperties {
    */
   public String getConfigLocation() {
     return this.configLocation;
+  }
+
+  public String[] getMapperPackages() {
+    return mapperPackages;
+  }
+
+  public void setMapperPackages(String[] mapperPackages) {
+    this.mapperPackages = mapperPackages;
   }
 
   /**
